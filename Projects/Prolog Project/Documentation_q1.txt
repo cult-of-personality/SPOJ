@@ -1,0 +1,79 @@
+*********************************************************************************************************************************************
+						Documentation for Expression Simplifier(Set 1)
+							Submitted By:
+						    Siddhant Tuli (2012A7PS077P)
+						    Shreyansh Gandhi (2012A7PS070P)
+*********************************************************************************************************************************************
+Inherent Assumptions & Guidelines:-
+1. Only input values allowed are 0,1,any variable name(refer point 2),'2<any variable>'.
+2. All variable names must start with lowercase alphabets.
+3. The twice of any variable must be defined as '2.<variable name>'. (inverted commas and dot included)
+4. All binary operations mentioned above have at most one argument as a variable. The other may be 0, 1, or the variable itself.
+5. The program works for any number of variables in the expression as long as the condition in point 4 is upheld.
+
+
+Predicates used with their functionality:-
+
+1. atomic: predefined predicate in prolog.
+
+2. simplify: This predicate is used by the user to simplify any valid expression, as defined by the rules in the knowledge base. The user 		     enters the expression to be simplified as the first argument and a variable ‘X’ as the second. The simplified expression is 		     unified with X.
+	     Arity: 2.
+
+3. div: The division predicate.
+	Identities implemented:-
+ 	X/1=X		'2.X'/1='2.X'
+ 	0/X=0		0/'2.X'=0
+ 	X/X=1		'2.X'/'2.X'=1
+     	Arity: 2.
+
+4. times: The multiplication predicate.
+	Identities implemented:-
+	 X*0=0		'2.X'*0=0
+	 X*1=X		'2.X'*1='2.X'
+	 0*X=0		 0*'2.X'=0	(commutative)
+	 1*X=X		 1*'2.X'='2.X'	(commutative)
+	Arity: 2.
+
+5. plus: The addition predicate.
+	 Identities implemented:-
+	 X+0=X		'2.X'+0='2.X'
+	 X+X='2.X'	'2.X'+'2.X'='2.2.X'
+	 0+X=X		 0+'2.X'='2.X'	(commutative)
+	Arity: 2.
+
+6. minus: The subtraction predicate.
+	Identities implemented:-
+	X-X=0		'2.X'-'2.X'=0
+	X-0=X		'2.X'-0='2.X'
+
+7. exp: The exponentiation predicate.
+	Identities implemented:-
+	X^1=X		'2.X'^1='2.X'
+	X^0=1		'2.X'^0=1
+	1^X=1		1^'2.X'=1
+
+
+Examples And Test Queries:-
+
+1. simplify(div(plus(0,var),minus(var,0)),Val).		(Expression:(0+x)/(x-0))
+   Val = 1.
+
+2. simplify(times(x,exp(0,x)),Val).			(Expression:x*(0^x))
+   Val = 0.
+
+3. simplify(plus(plus(x,x),0),Val).			(Expression:x+x+0)
+   Val = '2x'.
+
+4. simplify(div(minus(var,var),exp(var,1)),Val).	(Expression:(x-x)/(x^1))
+   Val = 0.
+
+5. simplify(div('2var',exp(x,0)),Val).			(Expression:(2x)/(x^0))
+   Val = ‘2var’.
+
+6. simplify(times(plus(var,0),exp(var,0)),Val).		(Expression:(x+0)*(x^0))
+   Val = var.
+
+7. simplify(div('2var',plus(var,var)),Val).		(Expression:2var/(var+var))
+   Val = 1.
+
+

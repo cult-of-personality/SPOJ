@@ -1,0 +1,356 @@
+*********************************************************************************************************************************************
+						Documentation for Question 2(Set 1)
+							Submitted By:
+						    Siddhant Tuli (2012A7PS077P)
+						    Shreyansh Gandhi (2012A7PS070P)
+*********************************************************************************************************************************************
+
+Inherent Assumptions & Guidelines For Querying:-
+1. Scheduling is done only for Sem 1 courses(in the assumed sample space).
+	Sem1 Courses:-(for timings, refer to lines 1 to 23 in the .pl file).
+	ch11,ch12,ch13
+	cs11,cs12,cs13
+	bio11,bio12,bio13
+	chem11,chem12,chem13
+	ha11,ha12,ha13
+	hb11,hb12,hb13
+	
+2. Some courses have been deliberately given clashing timings so as to demonstrate ALL possible cases.
+3. Six degrees have been assumed namely, a1,a7,b1,b2,h1,h2.
+4. We've implemented the code in both ways. You can use the given database of students s1 to s8, or an anonymous student's data (of the courses completed and degree) can be given as input, and eligibility for courses(CDCs and DCOCs) and PS can be asked.
+5. Prerequisite criteria for doing CDCs of other degree has been specified only for a few sample courses, which are: 
+6. For dual degree students, the 1st degree is the engineering degree(a1 or a7) and 2nd degree is the MSc(b1 or b2).
+7. In the database, students s
+
+QUERYING HAS TO BE DONE AS FOLLOWS:-
+1. For part (a) : Is a student eligible for doing PS course?
+	ps1,ps2(for single n dual)
+	eligible_for_PS2(Degree,<List of Courses completed>).		//for first deg. programme. see below for variants.
+
+	Ex. ?-  eligible_for_PS2(s1, [cs11, cs12, cs13, cs21, cs22, cs23, cs31, cs32, cs33, cs41, cs42, cs43, cs51, cs52, cs53, cs61, cs62, 			cs63, cs71, cs72, cs73, cs81, cs82, cs83]).
+	    true .
+
+2. For part (b) : Is a first degree student eligible for doing a higher degree course?
+	eligible_for_higher_EL(<Degree>,<List of Courses Done>).
+	eligible_for_higher_EL(<Student name>, < List of courses done >).
+
+3. For part (c) : Is a dual degree student eligible for doing a core course on his second degree?
+	eligible_for_CDC_SecondDegree (D1, D2, CDC, < List of courses done >).
+	eligible_for_CDC_SecondDegree (< Student name >, CDC, < List of courses done >).
+
+	Ex.  ?-
+
+4. For part (d) : Is there a conflict in the list of courses scheduled for a student?
+	schedule_clash( < List of courses > ).	returns true if there os a clash.
+	TO BE DONE ONLY FOR SEM-1 COURSES MENTIONED ABOVE.
+	Ex. ?- schedule_clash([cs11,chem11,chem12]).
+		true.
+	    ?- schedule_clash([cs11,hb11,ch13]).
+		false.
+	    ?- schedule_clash([cs11, cs12, cs13]).
+		true.
+
+
+EXTRA TEST QUERIES(PLEASE COPY AND PASTE):-
+1. Is a student eligible for CDC of his single degree?
+	eligible_for_CDC_SingleDegree(< Degree >, CDC, < List of courses done >).
+	eligible_for_CDC_SingleDegree(<Student name>, CDC, < List of courses done >).
+
+	?- eligible_for_CDC_SingleDegree(a7, cs21, [cs11, cs12, cs13]).
+	   true .
+
+	?- eligible_for_CDC_SingleDegree(s1, cs21, [cs11, cs12, cs13]).
+	   true.
+
+2. Is a dual degree student eligible for CDC of his first degree?
+	eligible_for_CDC_FirstDegree(< Degree >, CDC, < List of courses done >).
+	eligible_for_CDC_FirstDegree (< Student name >, CDC, < List of courses done >).
+
+	?- eligible_for_CDC_FirstDegree(s2, ch21, [ch11, ch12, ch13]).
+	  true.
+
+	?- eligible_for_CDC_FirstDegree(a7, cs21, [cs11, cs12, cs13]).
+	  true . 
+
+3. Is a dual degree student eligible for CDC of his second degree?
+	eligible_for_CDC_SecondDegree (D1, D2, CDC, < List of courses done >).
+	eligible_for_CDC_SecondDegree (< Student name >, CDC, < List of courses done >).
+	
+	?- eligible_for_CDC_SecondDegree(a1, b2, chem21, [chem11, chem12, chem13]).
+	  false.
+	?- eligible_for_CDC_SecondDegree(s2, chem21, [ch11, ch12, ch13, chem11, chem12, chem13]).
+	  true. 
+
+4. Is a first degree student eligible for PS 1? 
+	eligible_for_PS1( < Degree> , < List of courses done > ).
+	eligible_for_PS1( <Student name>, < List of courses done > ).
+	Ex. ?- eligible_for_PS1( student1,  [cs11] ).
+		false.
+	    ?- eligible_for_PS1(a1,[ch11,ch12,ch13,
+
+
+5. Is a dual degree student eligile for PS 1?
+	eligible_for_PS1( < Degree> , < List of courses done > ).
+	eligible_for_PS1( <Student name>, < List of courses done > ).
+
+6. Is a dual degree student eligible for doing a higher degree course?
+	?-eligible_for_higher_EL_Dual(s2, ch21, [ch11, ch12, ch13]).
+	  false.
+	?-eligible_for_higher_EL_Dual(a7, b2, [cs11, cs12, cs13, cs21, cs22, cs23, cs31, cs32, cs33, cs41, cs42, cs43, cs51, cs52, cs53, 			cs61, cs62, cs63, cs71, cs72, cs73, cs81, cs82, cs83]).
+	  true. 
+
+7. Is a student eligible for doing a DCOC?
+	?-eligible_for_DCOC(csd1, a7, [cs11, cs12, cs13, cs21, cs22, cs23, cs31, cs32, cs33, cs41, cs42, cs43, cs51, cs52, cs53, cs61, 			cs62, cs63, cs71, cs72, cs73, cs81, cs82, cs83]).
+	  true .
+	?-eligible_for_DCOC(csd1, a1, [cs11, cs12, cs13, cs21, cs22, cs23, cs31, cs32, cs33, cs41, cs42, cs43, cs51, cs52, cs53, cs61, 			cs62, cs63, cs71, cs72, cs73, cs81, cs82, cs83]).
+	  false.
+
+8. Is a student eligible for doing CDC  of other degree?
+	eligible_for_CDC_OtherDegree (< Degree >, CDC,  < List of courses done >).
+
+	?- eligible_for_CDC_OtherDegree(a7,cs41,[cs11,cs21]).
+	  true.
+	?- eligible_for_CDC_OtherDegree(a7,cs41,[cs11]).
+	  false.
+
+9. Is a dual degree student eligible for PS2?
+	?- eligible_for_PS2(a7,b1,[cs11, cs12, cs13, cs21, cs22, cs23, cs31, cs32, cs33, cs41, cs42, cs43, cs51, cs52, cs53, cs61, 			cs62, cs63,bio11,bio12,bio13,bio21,bio22,bio23,bio31,bio32,bio33,bio41,bio42,bio43,bio51,bio52,bio53,bio61,bio62,bio63]).
+	true.
+
+
+
+Predicates & Functions Used Within The Above Predicates(Please refer only for deeper understanding):-
+
+1. hour(<Course Name>, <Timing>): It stores the name of the course and its timings in a week.
+		Ex. hour(csF111, mwf1).
+		It implies that the course csF111 is held on Monday, Wednesday, Friday 1st hour.
+		This predicate is used in checking for schedule clashes.
+
+2. cdc_eligibilty(<degree>, <Course Name>, <[List of prerequisites]>).
+		It stores the name of the CDCs, along with its degree and its prerequisites.
+		Ex. cdc_eligibilty(a7, csF311,  [csF211, csF111]).
+		It implies that the course csF311 is a CDC of a7 degree and its prerequisites are csF111 and CS f211.
+
+3. student(<Name>, <Degree>, <Type of Degree>).
+		It stores the name of student, his degree and whether he is a single degree or higher degree student.
+		Ex. student(student1, a7, single).
+		    student(student3, a1, single).
+		    student(student4, h1, higher).
+
+4. student(<Name>, <[ First Degree | Second Degree ]>, dual).
+		It stores the name of student, his both degrees as a list for dual degree students.
+		Ex. student(student2, [a1,b2], dual).
+		    It implies that student2 is a dual degree student doing a1 as his first degree and b2 as his second degree.
+
+5. contains(<Element>, <List of elements>).
+		It checks whether the element is contained in the list of elements or not.
+		Ex. ?- contains ( 1, [1, 2, 3, 4] ).
+		    true.
+
+6. contains_all ( < List1 >, < List2 > ).
+		It checks whether the < List1 > contains all the elements of < List2 > or not.
+		Ex.?- contains_all ( [1, 2, 3, 4], [1, 2, 3] ).
+		    true.
+
+7. mess_fees_paid( < Student Name > ).
+		Checks whether student has paid his fees or not.
+		Ex. ?- mess_fees_paid(student1).
+		    true.
+
+8. dues_paid( < Student Name > ).
+		Checks whether student has paid his dues or not.
+		Ex. ?- dues_paid(student1).
+		    true.
+
+9. gradeCard_withheld ( < Student Name > ).
+		Checks whether grade card of the student is withheld or not.
+		Ex. ?- gradeCard_withheld ( student1 ).
+		    false.
+
+10. gradeCard_incomplete(< Student Name > ).
+		Checks whether grade card of the student is incomplete.
+		Ex. ?- gradeCard_incomplete ( student1 ).
+		   false.
+
+11. debarred(< Student Name > ).
+		Checks whether student has been debarred for some reason.
+		Ex. ?- debarred ( student1 ).
+			false.
+
+12. exceptionally_allowed_by_dean( < Student Name >).
+		Checks whether student has been debarred for some reason.
+		?- exceptionally_allowed_by_dean( student1 ).
+		false.
+
+13. is_degree(< Degree > )
+Checks whether X is a degree or not by checking whether list of degrees contains X.
+predicates used: contains
+		?- is_degree(a7).
+		true.
+
+14. approved_by_dean(< Student Name > ).
+	Checks whether student is approved by the dean ARC.
+	Dean approves a student when :-
+	a) Exceptional conditions.
+	b) Student has paid mess fees, paid all dues, his grade card is not withheld, his grade card is not incomplete and he has not been 		debarred for some reason.
+15. get_SingleDegree (< Student Name > , Deg ).
+		Returns the degree of a single degree student
+		?- get_SingleDegree ( student1, Deg ).
+		Deg = a7.
+
+16. get_FirstDegree (< Student Name >, Deg ).
+		Returns the first degree of a dual degree student
+		?- get_FirstDegree ( student2, Deg ).
+		Deg = a1.
+
+17. get_SecondDegree(< Student Name >, Deg)
+		Returns the second degree of a dual degree student
+		?- get_SecondDegree ( student2, Deg ).
+		Deg = b2.
+
+18. done_all_courses ( <Degree>, < List of courses done >, <Semester number> ) 
+	Checks whether user has done all courses of the <Degree> upto the <Semester number>.
+	It uses the predicate match_all_courses.
+	i.e. if all courses of the <Degree> upto the <Semester number> are contained in <List if courses done> or not. 
+
+19. match_all_courses(<Number of semesters to match>, <List of courses user has done>,< Semester wise list of courses >).
+	Checks whether the courses upto N semesters in the semester wise list is contained in the user list of courses.
+	Note: The semester wise list of courses is part our sample data. 
+	Used by done_all_courses predicate.
+	Uses contains_all.
+	Semester wise list of courses is in this format 
+	[ [Semester_no , course1, course2, course3 ...] , [Semester_no , course1, course2 ...] 
+ 	[Semester_no , course1, course2, course3...]  ].
+
+20. find_CDC_course (< Semester number > , CDC, <Degree> )
+	Finds the Semester of the <Degree> in which the CDC has to be done.
+	Uses predicate find_CDC_sem.
+	Ex. find_CDC_course (N, c71, a1).
+	    1.
+
+21. find_CDC_sem ( < Semester number > , CDC, < Semester wise list of courses >).
+	Finds the Semester of the CDC in the Semester wise list of courses.
+	Used by find_CDC_course predicate.
+	Uses contains predicate.
+	Note: The semester wise list of courses is part our sample data. 
+	?- find_CDC_sem ( N, c75, 
+	[[1,c71], [2,c75,c76], [3,c78,c79], [4,c702,c703,c704,c705]] ).
+	2
+
+22. find_DCOC_course ( DCOC, D, UL ).
+	finds the degree of the DCOC that user wants to do, checks if the degree of DCOC is same as user’s degree and accordingly checks 	the prerequisites for DCOC of user’s own degree or DCOC of other degree.
+	Uses predicates find_DCOC_deg, dcoc_ownDeg, dcoc_otherDeg.
+
+23. find_DCOC_deg ( < DCOC >, < Degree wise list of DCOCs >, Deg )
+	Finds the Degree of a DCOC from a Degree wise list of DCOCs.
+	Uses predicate contains.
+	format of Degree wise list of DCOCs 
+	[ Degree, [dcoc_1, dcoc_2, dcoc_3] | Rest ]
+
+24. dcoc_ownDeg ( < Degree >, < List of courses done > )
+	Checks the condition for doing a DCOC of own degree.
+
+25. dcoc_otherDeg ( < Degree >, < List of courses done > )
+	Checks the condition for doing a DCOC of any other degree.
+
+26. schedule_clash( < List of courses > )
+	Checks whether the list of courses has any timetable clashes.
+	Uses predicate hour, single_clash.
+	Ex. schedule_clash ( [c1, c2, c3] ).
+	true.
+
+27. single_clash( <Course>, < List of other courses > )
+	Checks whether Course timetable clashes with any of the List of courses.
+	Uses predicate hour.
+	Used by schedule_clash.
+	Ex. single_clash ( c1, [c2, c3] ).
+	false.
+
+28. eligible_for_PS1( < Degree> , < List of courses done > )
+	Checks whether the user with given <Degree> and having done < List of courses > is eligible for doing PS1.
+	Criteria: should have done all courses of his degree upto semester 4.
+	Uses predicate done_all_courses.
+
+29. eligible_for_PS1( <Student name>, < List of courses done > )
+	Checks whether the Student in the database having done < List of courses > is eligible for doing PS1.
+	Criteria: should have done all courses of his degree upto semester 4.
+	Uses predicate done_all_courses, get_SingleDegree, get_SecondDegree.
+Ex. ?- eligible_for_PS1( student1,  [c1, c2, c3] ).
+	false.
+Note: student1 is defined as a student of a7 branch.
+
+30. eligible_for_PS2(D, L)
+	Checks whether the user with given <Degree> and having done < List of courses > is eligible for doing PS1.
+	Criteria: should have done all courses of his degree upto semester 6.
+	Uses predicate done_all_courses.
+Ex.?- eligible_for_PS1( a7 , [c1] )
+	false.
+
+31. eligible_for_PS2(<Student name>, < List of courses done >)
+	Checks whether the Student having done < List of courses > is eligible for doing PS1.
+	Criteria: should have done all courses of his degree upto semester 6.
+	Uses predicate done_all_courses, get_SingleDegree.
+Ex.?- eligible_for_PS1( student1,  [c1] ).
+	false.
+Note: student1 is defined as a student of a7 branch.
+
+32. eligible_for_CDC_SingleDegree(< Degree >, CDC, < List of courses done >).
+	Checks whether user is eligible for doing his own degree CDC having done <List of courses> 
+	Criteria: He must have done all courses of semesters preceding the CDC semester.
+	Uses predicate find_CDC_course, done_all_courses.
+
+33. eligible_for_CDC_SingleDegree(<Student name>, CDC, < List of courses done >)
+	Checks whether a student in database is eligible for doing his own degree CDC having done <List of courses> 
+	Criteria: He must have done all courses of semesters preceding the CDC semester.
+	Uses predicate done_all_course, find_CDC_course, get_SingleDegree.
+Ex. eligible_for_CDC_SingleDegree( student1, c75, [c71] ).
+
+34. eligible_for_CDC_FirstDegree(< Degree >, CDC, < List of courses done >)
+	Checks whether dual degree user is eligible for doing his first degree CDC having done <List of courses> 
+	Criteria: He must have done all courses of his first degree in semesters preceding the CDC semester.
+	Uses predicate find_CDC_course, done_all_courses.
+
+35. eligible_for_CDC_FirstDegree (< Student name >, CDC, < List of courses done >)
+	Checks whether a dual degree student in database is eligible for doing his first degree CDC having done <List of courses> 
+	Criteria: He must have done all courses of semesters preceding the CDC semester.
+	Uses predicate done_all_course, find_CDC_course, get_FirstDegree.
+Ex. eligible_for_CDC_SingleDegree ( student1, c75, [c71] ).
+
+36. eligible_for_CDC_SecondDegree (D1, D2, CDC, < List of courses done >)
+	Checks whether dual degree user is eligible for doing his second degree CDC having done <List of courses> 
+	Criteria: He must have done all courses of his second degree in semesters preceding the CDC semester.
+	Uses predicate find_CDC_course, done_all_courses.
+
+37. eligible_for_CDC_SecondDegree (< Student name >, CDC, < List of courses done >)
+	Checks whether a dual degree student in database is eligible for doing his second degree CDC having done <List of courses> 
+	Criteria: He must have done all courses of his second degree of semesters preceding the CDC semester.
+	Uses predicate done_all_course, find_CDC_course, get_SecondDegree.
+Ex. eligible_for_CDC_SingleDegree ( student1, c75, [c71] ).
+
+38. eligible_for_CDC_OtherDegree (< Degree >, CDC,  < List of courses done >)
+	Checks whether a user is eligible for doing a CDC of a degree other than his own degree having done <List of courses> 
+	Criteria: He must have done all courses that are prerequisites of the course.
+	Uses predicate find_CDC_course, done_all_courses.
+
+39. eligible_for_higher_EL (< Degree >, < List of courses done >)
+	Checks whether a user is eligible for doing a higher degree elective having done <List of courses> 
+	Criteria: He must have completed all his CDCs
+
+40. eligible_for_higher_EL (<Student name>, < List of courses done >)
+	Checks whether a student in database is eligible for doing a higher degree elective having done <List of courses> 
+	Criteria: He must have completed all his degree CDCs.
+
+41. eligible_for_higher_EL_Dual (<First Degree>, <Second Degree>,< List of courses done >)
+	Checks whether a dual degree user is eligible for doing a higher degree elective having done <List of courses> 
+	Criteria: He must have completed all CDCs of his first degree
+
+42. eligible_for_higher_EL_Dual (<Student name>, < List of courses done >)
+	Checks whether a dual degree student in database is eligible for doing a higher degree elective having done <List of courses> 
+	Criteria: He must have completed all CDCs of his first degree
+
+43. eligible_for_DCOC(DCOC, < Degree > , < List of courses done >)
+	Checks whether a user is eligible for doing a DCOC of the <Degree> having done the <List of ourses>.
+	Criteria: He must have completed all CDCs of his single degree and in case of dual degree must have done all courses of his first degree.
+
+
+
