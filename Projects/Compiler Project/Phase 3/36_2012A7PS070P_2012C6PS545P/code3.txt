@@ -1,0 +1,22 @@
+
+function void fibonacci: (int a) 
+{
+int c;
+c := 2;
+array(int)[a+1] fib;
+fib[1] := 1;
+fib[2] := 1;
+while (c < a)
+{
+c := c +1;
+fib[c] := fib[c-1] + fib[c-2];
+}
+return fib[a];
+}
+main
+{
+int ans;
+ans := call fibonacci(5);
+output << ans;
+}
+

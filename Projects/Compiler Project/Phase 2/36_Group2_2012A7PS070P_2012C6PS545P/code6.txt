@@ -1,0 +1,9 @@
+
+main
+{
+    int a;
+    a:=true;
+    b := 1b;
+    end;
+    input >> a;
+}

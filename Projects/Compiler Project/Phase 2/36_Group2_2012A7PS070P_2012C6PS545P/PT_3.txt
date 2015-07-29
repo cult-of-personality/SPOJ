@@ -1,0 +1,483 @@
+Hash Tables Built
+Building Parse Table.
+Parse Table Built
+Successful Parsing
+Removing TK_LPAR
+Removing TK_RPAR
+Removing TK_LPAR
+Removing TK_RPAR
+Removing TK_LPAR
+Removing TK_RPAR
+Removing TK_LPAR
+Removing TK_RPAR
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Removing TK_SEMI
+Epsilon: Removing NT_STRUCTS
+Epsilon: Removing NT_DECS
+Epsilon: Removing NT_T2
+Epsilon: Removing NT_T
+Epsilon: Removing NT_DECS
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_J
+Epsilon: Removing NT_H
+Epsilon: Removing NT_G
+Epsilon: Removing NT_F
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_Z
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_J
+Epsilon: Removing NT_H
+Epsilon: Removing NT_G
+Epsilon: Removing NT_F
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_J
+Epsilon: Removing NT_H
+Epsilon: Removing NT_G
+Epsilon: Removing NT_F
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_H
+Epsilon: Removing NT_G
+Epsilon: Removing NT_F
+Epsilon: Removing NT_X
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_J
+Epsilon: Removing NT_H
+Epsilon: Removing NT_G
+Epsilon: Removing NT_F
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_X
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_J
+Epsilon: Removing NT_H
+Epsilon: Removing NT_G
+Epsilon: Removing NT_F
+Epsilon: Removing NT_STATS
+Epsilon: Removing NT_X
+Epsilon: Removing NT_K
+Epsilon: Removing NT_D
+Epsilon: Removing NT_C
+Epsilon: Removing NT_B
+Epsilon: Removing NT_X
+Epsilon: Removing NT_STATS
+Epsilon: Removing NT_FUNCS
+Epsilon: Removing NT_T
+Epsilon: Removing NT_DECS
+Epsilon: Removing NT_X
+Epsilon: Removing NT_S
+Epsilon: Removing NT_STATS
+Extra: Removing NT_RETTYPE
+Extra: Removing NT_FUNCNAME
+Extra: Removing NT_TYPE
+Extra: Removing NT_FUNCSIGN
+Extra: Removing NT_TYPE
+Extra: Removing NT_STAT
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_EXP
+Extra: Removing NT_STAT
+Extra: Removing NT_TYPE
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_DECS
+Extra: Removing NT_STAT
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_EXP
+Extra: Removing NT_STAT
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_EXP
+Extra: Removing NT_STAT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_RELOP
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_CONDEXP
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_EXP
+Extra: Removing NT_STAT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_LIT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_EXP
+Extra: Removing NT_STAT
+Extra: Removing NT_STAT
+Extra: Removing NT_SIMPLE
+Extra: Removing NT_NOTEXP
+Extra: Removing NT_AREXP
+Extra: Removing NT_TORET
+Extra: Removing NT_STAT
+Extra: Removing NT_Y
+Extra: Removing NT_TYPE
+Extra: Removing NT_STAT
+Extra: Removing NT_LIT
+Extra: Removing NT_EXP
+Extra: Removing NT_STAT
+Extra: Removing NT_STAT
+After removing epsilons, extra non-terminals, semicolons, parantheses:-
+Node: NT_PROG, Children:NT_FUNCS, NT_MAIN, 
+ Node: NT_FUNCS, Parent = NT_PROG, Children:TK_FUNC, TK_VOID, TK_ID, TK_COLON, NT_ARGS, NT_BLOCK, 
+  Node: TK_FUNC, Parent = NT_FUNCS, No Children 
+  Node: TK_VOID, Parent = NT_FUNCS, No Children 
+  Node: TK_ID, Parent = NT_FUNCS, No Children 
+  Node: TK_COLON, Parent = NT_FUNCS, No Children 
+  Node: NT_ARGS, Parent = NT_FUNCS, Children:TK_INT, TK_ID, 
+   Node: TK_INT, Parent = NT_ARGS, No Children 
+   Node: TK_ID, Parent = NT_ARGS, No Children 
+  Node: NT_BLOCK, Parent = NT_FUNCS, Children:TK_LBRACE, NT_STATS, TK_RBRACE, 
+   Node: TK_LBRACE, Parent = NT_BLOCK, No Children 
+   Node: NT_STATS, Parent = NT_BLOCK, Children:NT_DECS, NT_STATS, 
+    Node: NT_DECS, Parent = NT_STATS, Children:TK_INT, NT_IDLIST, 
+     Node: TK_INT, Parent = NT_DECS, No Children 
+     Node: NT_IDLIST, Parent = NT_DECS, Children:TK_ID, 
+      Node: TK_ID, Parent = NT_IDLIST, No Children 
+    Node: NT_STATS, Parent = NT_STATS, Children:NT_ASSIGNST, NT_STATS, 
+     Node: NT_ASSIGNST, Parent = NT_STATS, Children:NT_ARRAYST, TK_ASSIGNOP, NT_OREXP, 
+      Node: NT_ARRAYST, Parent = NT_ASSIGNST, Children:TK_ID, 
+       Node: TK_ID, Parent = NT_ARRAYST, No Children 
+      Node: TK_ASSIGNOP, Parent = NT_ASSIGNST, No Children 
+      Node: NT_OREXP, Parent = NT_ASSIGNST, Children:NT_ANDEXP, 
+       Node: NT_ANDEXP, Parent = NT_OREXP, Children:NT_EQEXP, 
+        Node: NT_EQEXP, Parent = NT_ANDEXP, Children:NT_RELEXP, 
+         Node: NT_RELEXP, Parent = NT_EQEXP, Children:NT_ADDEXP, 
+          Node: NT_ADDEXP, Parent = NT_RELEXP, Children:NT_MULEXP, 
+           Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+            Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+             Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+              Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+     Node: NT_STATS, Parent = NT_STATS, Children:NT_ARRINIT, NT_STATS, 
+      Node: NT_ARRINIT, Parent = NT_STATS, Children:NT_ARPART, TK_ID, 
+       Node: NT_ARPART, Parent = NT_ARRINIT, Children:TK_ARRAY, TK_INT, TK_LSQ, NT_ADDEXP, TK_RSQ, 
+        Node: TK_ARRAY, Parent = NT_ARPART, No Children 
+        Node: TK_INT, Parent = NT_ARPART, No Children 
+        Node: TK_LSQ, Parent = NT_ARPART, No Children 
+        Node: NT_ADDEXP, Parent = NT_ARPART, Children:NT_MULEXP, NT_B, 
+         Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+          Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+           Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+            Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+             Node: TK_ID, Parent = NT_ARRAYST, No Children 
+         Node: NT_B, Parent = NT_ADDEXP, Children:TK_PLUS, NT_MULEXP, 
+          Node: TK_PLUS, Parent = NT_B, No Children 
+          Node: NT_MULEXP, Parent = NT_B, Children:NT_BITEXP, 
+           Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+            Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+             Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+        Node: TK_RSQ, Parent = NT_ARPART, No Children 
+       Node: TK_ID, Parent = NT_ARRINIT, No Children 
+      Node: NT_STATS, Parent = NT_STATS, Children:NT_ASSIGNST, NT_STATS, 
+       Node: NT_ASSIGNST, Parent = NT_STATS, Children:NT_ARRAYST, TK_ASSIGNOP, NT_OREXP, 
+        Node: NT_ARRAYST, Parent = NT_ASSIGNST, Children:TK_ID, NT_X, 
+         Node: TK_ID, Parent = NT_ARRAYST, No Children 
+         Node: NT_X, Parent = NT_ARRAYST, Children:TK_LSQ, NT_ADDEXP, TK_RSQ, 
+          Node: TK_LSQ, Parent = NT_X, No Children 
+          Node: NT_ADDEXP, Parent = NT_X, Children:NT_MULEXP, 
+           Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+            Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+             Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+              Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+          Node: TK_RSQ, Parent = NT_X, No Children 
+        Node: TK_ASSIGNOP, Parent = NT_ASSIGNST, No Children 
+        Node: NT_OREXP, Parent = NT_ASSIGNST, Children:NT_ANDEXP, 
+         Node: NT_ANDEXP, Parent = NT_OREXP, Children:NT_EQEXP, 
+          Node: NT_EQEXP, Parent = NT_ANDEXP, Children:NT_RELEXP, 
+           Node: NT_RELEXP, Parent = NT_EQEXP, Children:NT_ADDEXP, 
+            Node: NT_ADDEXP, Parent = NT_RELEXP, Children:NT_MULEXP, 
+             Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+              Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+               Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+                Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+       Node: NT_STATS, Parent = NT_STATS, Children:NT_ASSIGNST, NT_STATS, 
+        Node: NT_ASSIGNST, Parent = NT_STATS, Children:NT_ARRAYST, TK_ASSIGNOP, NT_OREXP, 
+         Node: NT_ARRAYST, Parent = NT_ASSIGNST, Children:TK_ID, NT_X, 
+          Node: TK_ID, Parent = NT_ARRAYST, No Children 
+          Node: NT_X, Parent = NT_ARRAYST, Children:TK_LSQ, NT_ADDEXP, TK_RSQ, 
+           Node: TK_LSQ, Parent = NT_X, No Children 
+           Node: NT_ADDEXP, Parent = NT_X, Children:NT_MULEXP, 
+            Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+             Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+              Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+               Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+           Node: TK_RSQ, Parent = NT_X, No Children 
+         Node: TK_ASSIGNOP, Parent = NT_ASSIGNST, No Children 
+         Node: NT_OREXP, Parent = NT_ASSIGNST, Children:NT_ANDEXP, 
+          Node: NT_ANDEXP, Parent = NT_OREXP, Children:NT_EQEXP, 
+           Node: NT_EQEXP, Parent = NT_ANDEXP, Children:NT_RELEXP, 
+            Node: NT_RELEXP, Parent = NT_EQEXP, Children:NT_ADDEXP, 
+             Node: NT_ADDEXP, Parent = NT_RELEXP, Children:NT_MULEXP, 
+              Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+               Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+                 Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+        Node: NT_STATS, Parent = NT_STATS, Children:NT_ITERST, NT_STATS, 
+         Node: NT_ITERST, Parent = NT_STATS, Children:TK_LOOP, NT_OREXP, TK_LBRACE, NT_STATS, TK_RBRACE, 
+          Node: TK_LOOP, Parent = NT_ITERST, No Children 
+          Node: NT_OREXP, Parent = NT_ITERST, Children:NT_ANDEXP, 
+           Node: NT_ANDEXP, Parent = NT_OREXP, Children:NT_EQEXP, 
+            Node: NT_EQEXP, Parent = NT_ANDEXP, Children:NT_RELEXP, 
+             Node: NT_RELEXP, Parent = NT_EQEXP, Children:NT_ADDEXP, NT_J, 
+              Node: NT_ADDEXP, Parent = NT_RELEXP, Children:NT_MULEXP, 
+               Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+                Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                 Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                  Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+                   Node: TK_ID, Parent = NT_ARRAYST, No Children 
+              Node: NT_J, Parent = NT_RELEXP, Children:TK_LESS, NT_ADDEXP, 
+               Node: TK_LESS, Parent = NT_J, No Children 
+               Node: NT_ADDEXP, Parent = NT_J, Children:NT_MULEXP, 
+                Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+                 Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                  Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                   Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+                    Node: TK_ID, Parent = NT_ARRAYST, No Children 
+          Node: TK_LBRACE, Parent = NT_ITERST, No Children 
+          Node: NT_STATS, Parent = NT_ITERST, Children:NT_ASSIGNST, NT_STATS, 
+           Node: NT_ASSIGNST, Parent = NT_STATS, Children:NT_ARRAYST, TK_ASSIGNOP, NT_OREXP, 
+            Node: NT_ARRAYST, Parent = NT_ASSIGNST, Children:TK_ID, 
+             Node: TK_ID, Parent = NT_ARRAYST, No Children 
+            Node: TK_ASSIGNOP, Parent = NT_ASSIGNST, No Children 
+            Node: NT_OREXP, Parent = NT_ASSIGNST, Children:NT_ANDEXP, 
+             Node: NT_ANDEXP, Parent = NT_OREXP, Children:NT_EQEXP, 
+              Node: NT_EQEXP, Parent = NT_ANDEXP, Children:NT_RELEXP, 
+               Node: NT_RELEXP, Parent = NT_EQEXP, Children:NT_ADDEXP, 
+                Node: NT_ADDEXP, Parent = NT_RELEXP, Children:NT_MULEXP, NT_B, 
+                 Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+                  Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                   Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                    Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+                     Node: TK_ID, Parent = NT_ARRAYST, No Children 
+                 Node: NT_B, Parent = NT_ADDEXP, Children:TK_PLUS, NT_MULEXP, 
+                  Node: TK_PLUS, Parent = NT_B, No Children 
+                  Node: NT_MULEXP, Parent = NT_B, Children:NT_BITEXP, 
+                   Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                    Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+                     Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+           Node: NT_STATS, Parent = NT_STATS, Children:NT_ASSIGNST, 
+            Node: NT_ASSIGNST, Parent = NT_STATS, Children:NT_ARRAYST, TK_ASSIGNOP, NT_OREXP, 
+             Node: NT_ARRAYST, Parent = NT_ASSIGNST, Children:TK_ID, NT_X, 
+              Node: TK_ID, Parent = NT_ARRAYST, No Children 
+              Node: NT_X, Parent = NT_ARRAYST, Children:TK_LSQ, NT_ADDEXP, TK_RSQ, 
+               Node: TK_LSQ, Parent = NT_X, No Children 
+               Node: NT_ADDEXP, Parent = NT_X, Children:NT_MULEXP, 
+                Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+                 Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                  Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                   Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+                    Node: TK_ID, Parent = NT_ARRAYST, No Children 
+               Node: TK_RSQ, Parent = NT_X, No Children 
+             Node: TK_ASSIGNOP, Parent = NT_ASSIGNST, No Children 
+             Node: NT_OREXP, Parent = NT_ASSIGNST, Children:NT_ANDEXP, 
+              Node: NT_ANDEXP, Parent = NT_OREXP, Children:NT_EQEXP, 
+               Node: NT_EQEXP, Parent = NT_ANDEXP, Children:NT_RELEXP, 
+                Node: NT_RELEXP, Parent = NT_EQEXP, Children:NT_ADDEXP, 
+                 Node: NT_ADDEXP, Parent = NT_RELEXP, Children:NT_MULEXP, NT_B, 
+                  Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+                   Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                    Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                     Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, NT_X, 
+                      Node: TK_ID, Parent = NT_ARRAYST, No Children 
+                      Node: NT_X, Parent = NT_ARRAYST, Children:TK_LSQ, NT_ADDEXP, TK_RSQ, 
+                       Node: TK_LSQ, Parent = NT_X, No Children 
+                       Node: NT_ADDEXP, Parent = NT_X, Children:NT_MULEXP, NT_B, 
+                        Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+                         Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                          Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                           Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+                            Node: TK_ID, Parent = NT_ARRAYST, No Children 
+                        Node: NT_B, Parent = NT_ADDEXP, Children:TK_MINUS, NT_MULEXP, 
+                         Node: TK_MINUS, Parent = NT_B, No Children 
+                         Node: NT_MULEXP, Parent = NT_B, Children:NT_BITEXP, 
+                          Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                           Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+                            Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+                       Node: TK_RSQ, Parent = NT_X, No Children 
+                  Node: NT_B, Parent = NT_ADDEXP, Children:TK_PLUS, NT_MULEXP, 
+                   Node: TK_PLUS, Parent = NT_B, No Children 
+                   Node: NT_MULEXP, Parent = NT_B, Children:NT_BITEXP, 
+                    Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                     Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                      Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, NT_X, 
+                       Node: TK_ID, Parent = NT_ARRAYST, No Children 
+                       Node: NT_X, Parent = NT_ARRAYST, Children:TK_LSQ, NT_ADDEXP, TK_RSQ, 
+                        Node: TK_LSQ, Parent = NT_X, No Children 
+                        Node: NT_ADDEXP, Parent = NT_X, Children:NT_MULEXP, NT_B, 
+                         Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+                          Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                           Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                            Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+                             Node: TK_ID, Parent = NT_ARRAYST, No Children 
+                         Node: NT_B, Parent = NT_ADDEXP, Children:TK_MINUS, NT_MULEXP, 
+                          Node: TK_MINUS, Parent = NT_B, No Children 
+                          Node: NT_MULEXP, Parent = NT_B, Children:NT_BITEXP, 
+                           Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                            Node: NT_UNEXP, Parent = NT_BITEXP, Children:TK_INTLIT, 
+                             Node: TK_INTLIT, Parent = NT_UNEXP, No Children 
+                        Node: TK_RSQ, Parent = NT_X, No Children 
+          Node: TK_RBRACE, Parent = NT_ITERST, No Children 
+         Node: NT_STATS, Parent = NT_STATS, Children:NT_RETURNST, 
+          Node: NT_RETURNST, Parent = NT_STATS, Children:TK_RETURN, NT_ARRAYST, 
+           Node: TK_RETURN, Parent = NT_RETURNST, No Children 
+           Node: NT_ARRAYST, Parent = NT_RETURNST, Children:TK_ID, NT_X, 
+            Node: TK_ID, Parent = NT_ARRAYST, No Children 
+            Node: NT_X, Parent = NT_ARRAYST, Children:TK_LSQ, NT_ADDEXP, TK_RSQ, 
+             Node: TK_LSQ, Parent = NT_X, No Children 
+             Node: NT_ADDEXP, Parent = NT_X, Children:NT_MULEXP, 
+              Node: NT_MULEXP, Parent = NT_ADDEXP, Children:NT_BITEXP, 
+               Node: NT_BITEXP, Parent = NT_MULEXP, Children:NT_UNEXP, 
+                Node: NT_UNEXP, Parent = NT_BITEXP, Children:NT_ARRAYST, 
+                 Node: NT_ARRAYST, Parent = NT_UNEXP, Children:TK_ID, 
+                  Node: TK_ID, Parent = NT_ARRAYST, No Children 
+             Node: TK_RSQ, Parent = NT_X, No Children 
+   Node: TK_RBRACE, Parent = NT_BLOCK, No Children 
+ Node: NT_MAIN, Parent = NT_PROG, Children:TK_MAIN, NT_BLOCK, 
+  Node: TK_MAIN, Parent = NT_MAIN, No Children 
+  Node: NT_BLOCK, Parent = NT_MAIN, Children:TK_LBRACE, NT_STATS, TK_RBRACE, 
+   Node: TK_LBRACE, Parent = NT_BLOCK, No Children 
+   Node: NT_STATS, Parent = NT_BLOCK, Children:NT_DECS, NT_STATS, 
+    Node: NT_DECS, Parent = NT_STATS, Children:TK_INT, NT_IDLIST, 
+     Node: TK_INT, Parent = NT_DECS, No Children 
+     Node: NT_IDLIST, Parent = NT_DECS, Children:TK_ID, 
+      Node: TK_ID, Parent = NT_IDLIST, No Children 
+    Node: NT_STATS, Parent = NT_STATS, Children:NT_ASSIGNST, NT_STATS, 
+     Node: NT_ASSIGNST, Parent = NT_STATS, Children:NT_ARRAYST, TK_ASSIGNOP, NT_FUNCCALL, 
+      Node: NT_ARRAYST, Parent = NT_ASSIGNST, Children:TK_ID, 
+       Node: TK_ID, Parent = NT_ARRAYST, No Children 
+      Node: TK_ASSIGNOP, Parent = NT_ASSIGNST, No Children 
+      Node: NT_FUNCCALL, Parent = NT_ASSIGNST, Children:TK_CALL, TK_ID, NT_TOSEND, 
+       Node: TK_CALL, Parent = NT_FUNCCALL, No Children 
+       Node: TK_ID, Parent = NT_FUNCCALL, No Children 
+       Node: NT_TOSEND, Parent = NT_FUNCCALL, Children:TK_INTLIT, 
+        Node: TK_INTLIT, Parent = NT_TOSEND, No Children 
+     Node: NT_STATS, Parent = NT_STATS, Children:NT_OUTSTAT, 
+      Node: NT_OUTSTAT, Parent = NT_STATS, Children:TK_OUTSTAT, TK_OUTOP, TK_ID, 
+       Node: TK_OUTSTAT, Parent = NT_OUTSTAT, No Children 
+       Node: TK_OUTOP, Parent = NT_OUTSTAT, No Children 
+       Node: TK_ID, Parent = NT_OUTSTAT, No Children 
+   Node: TK_RBRACE, Parent = NT_BLOCK, No Children 
+Parse Tree Deleted
+Parse Table Deleted
+Hash Table Deleted
+Hash Table Deleted
